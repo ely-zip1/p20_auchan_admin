@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 class Registration extends CI_Controller
 {
@@ -167,4 +167,4 @@ class Registration extends CI_Controller
   //         return false;
   //     }
   // }
-}
+} -->
