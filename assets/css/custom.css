@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'bebas_neue';
+    src: url('../fonts/bebasneue/bebasneue-regular-webfont.woff2') format('woff2'), url('../fonts/bebasneue/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensed_bold';
+    src: url('../fonts/roboto-condensed/robotocondensed-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-condensed/robotocondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensed_regular';
+    src: url('../fonts/roboto-condensed/robotocondensed-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-condensed/robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1024px) {
+    .account-summary-top {
+        text-align: center !important;
+    }
+    .plan-box .purchase-button {
+        font-size: 5vw !important;
+    }
+    .referral-row {
+        text-align: center !important;
+    }
+    .hula-girl {
+        display: flex;
+        justify-content: center !important;
+    }
+    .main-sidebar {
+        background-color: var(--spar-red) !important;
+    }
+    .main-sidebar .sidebar-menu li a {
+        color: #ffffff !important;
+    }
+    .main-sidebar .sidebar-menu li.active a {
+        color: var(--spar-red) !important;
+        background-color: #fcfcfd !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .detail-cell {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .chosen-plan {
+        font-size: 30px !important;
+    }
+    .chosen-plan-amount {
+        font-size: 30px !important;
+    }
+}
+
+:root {
+    --spar-red: #FF4141;
+    --spar-green: #008247;
+}
+
+body {
+    font-family: "roboto_condensed_regular" !important;
+}
+
+.spar-red-bg {
+    background-color: #FF4141;
+}
+
+.spar-green-bg {
+    background-color: #008247;
+}
+
+.spar-red-btn {
+    background-color: var(--spar-red);
+    box-shadow: 0px 3px 0px #cf3333;
+    color: white;
+}
+
+.spar-red-btn:hover {
+    background-color: #cf3333 !important;
+    color: white;
+}
+
+.spar-green-btn {
+    background-color: var(--spar-green);
+    box-shadow: 0px 3px 0px #015a32;
+    color: white;
+}
+
+.spar-green-btn:hover {
+    background-color: #015a32 !important;
+    color: white;
+}
+
+.spar-alert-success{
+    background-color: var(--spar-green) !important;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(49deg, rgba(255, 255, 255, 0.4654236694677871) 0%, rgba(255, 255, 255, 0.8239670868347339) 15%, rgba(255, 255, 255, 0.7315301120448179) 40%, rgba(255, 255, 255, 0.7455357142857143) 70%, rgba(255, 255, 255, 0.5550595238095238) 88%, rgba(255, 255, 255, 0.5718662464985995) 100%);
+    padding: 30px 10px;
+    box-shadow: 2px 2px 5px #00000061;
+    border-radius: 10px;
+    box-shadow: #ffffffa1;
+}
+
+.body-background {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    background-image: url('../img/bg/spar-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110%;
+    width: 110%;
+    opacity: .3;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.spar-navbar-bg {
+    background-color: white;
+}
+
+.nav-link-user {
+    color: var(--spar-red) !important;
+    
+}
+
+.nav-link-user i::before {
+    font-size: 35px;
+    
+}
+
+.partner-btn>i {
+    font-size: 15px !important;
+}
+
+/* .main-sidebar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%) !important;
+} */
+
+.main-sidebar .sidebar-menu li a {
+    color: var(--spar-red);
+}
+
+.main-sidebar .sidebar-menu li a:hover {
+    color: rgb(190, 22, 22) !important;
+}
+
+.sidebar-brand {
+    /* background-color: #ffffff; */
+}
+
+.sidebar-brand>a>img {
+    width: 150px;
+}
+
+.sidebar-brand-sm>a>img {
+    width: 40px;
+}
+
+.main-sidebar .sidebar-menu li.active a {
+    color: var(--spar-red);
+    font-weight: 600;
+    background-color: #fcfcfd;
+}
+
+.section-header {
+    background-color: var(--spar-red) !important;
+    /* backdrop-filter: blur(10px); */
+    border-bottom: 4px solid #cf1818 !important;
+    border-top: 1px solid var(--spar-red) !important;
+    border-radius: 5px !important;
+    height: 60px !important;
+    margin: 0px -20px 50px -20px !important;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5) !important;
+}
+.section-header h1 {
+    color: white !important;
+}
+
+/* .section-header-dashboard{
+    background-color: #ffffff88 !important;
+    border-top: none !important;
+    border-bottom: 2px solid #cccccc !important;
+    border-radius: 5px !important;
+    height: 60px !important;
+    margin: 0px -20px 50px -20px !important;
+    box-shadow: 1px 2px 5px rgba(100, 100, 100, 0.5) !important;
+    backdrop-filter: blur(10px);
+}
+.section-header-dashboard h1{
+    color: var(--spar-red) !important;
+} */
+
+
+p.user-message {
+    color: #e4000f;
+    font-size: 15px;
+    text-shadow: 0px 0px 4px white;
+}
+
+span.user-name {
+    font-weight: bolder;
+}
+
+.fas,
+.fa-bars {
+    font-size: large !important;
+}
+
+.referral-row {
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    /* background: #ffffff9e; */
+    background: rgba(255, 255, 255, 0.322);
+    /* background: linear-gradient(102deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.74) 63%, rgba(255, 255, 255, 0) 100%); */
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 2px 2px 5px #00000061; */
+}
+
+.referral-row-title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 5px solid #ff4141;
+    padding: 0px 0px 10px 10px;
+}
+
+.copy-button {
+    border-radius: 5px;
+    border: none;
+    background: #0D65AF;
+    padding: 10px 30px;
+    cursor: copy;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+}
+
+.referral-message{
+    margin-top: 10px;
+}
+.referral-link {
+    margin-top: 5px;
+    line-height: 15px;
+}
+
+.referral-button{
+    padding: auto 40px !important;
+}
+
+.referral-link code {
+    color: var(--spar-red) !important;
+}
+
+.referral-link-modal {
+    display: block;
+    padding: 20px;
+    color: #fff !important;
+    background-color: var(--spar-green) !important;
+}
+
+.referral-link-modal img{
+    width: 40px;
+    margin: 6px;
+}
+
+.deposit-withdraw-buttons {
+    margin: 10px 0 !important;
+}
+
+.btn-deposit {
+    background-color: var(--spar-red);
+    box-shadow: 0px 3px 0px #b73b3b;
+    color: #fff;
+}
+
+.btn-deposit:hover {
+    background-color: #d4d4d4 !important;
+    box-shadow: 0px 3px 0px #797979;
+    color: #015a32 !important;
+}
+
+.btn-withdraw {
+    background-color: #EE2739;
+    background: rgb(238, 39, 57);
+    background: linear-gradient(49deg, rgba(238, 39, 57, 1) 29%, rgba(238, 39, 100, 1) 100%);
+}
+
+.btn-withdraw:hover {
+    background-color: #f83e4e;
+    background: rgb(255, 63, 79);
+    background: linear-gradient(49deg, rgb(247, 54, 70) 29%, rgb(250, 61, 118) 100%);
+}
+
+.account-summary-box {
+    /* Created with https://www.css-gradient.com */
+    background: #ffffff9e;
+    backdrop-filter: blur(10px);
+    /* background: -webkit-radial-gradient(bottom, #FFFFFF, #D5F1FF);
+        background: -moz-radial-gradient(bottom, #FFFFFF, #D5F1FF);
+        background: radial-gradient(to top, #FFFFFF, #D5F1FF); */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0 0 0 / 15%);
+    margin-top: 20px;
+    color: #000000;
+    min-height: 165px;
+    display: grid;
+    align-items: center;
+}
+
+.summary_box_second_row {
+    min-height: 200px;
+}
+
+.account-summary-balance {
+    background: rgb(228, 0, 15);
+    background: linear-gradient(21deg, rgba(228, 0, 15, 1) 0%, rgba(250, 65, 77, 1) 35%, rgba(117, 0, 8, 1) 100%);
+    color: white !important;
+}
+
+.account-summary-balance .summary-value {
+    color: white;
+}
+
+.summary-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.account-summary-top .col-md-8 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.account-summary-top .image-bg{
+    background-color: var(--spar-red);
+    box-shadow: 2px 2px 20px 0px #ff7979;
+    padding: 20px;
+    border-radius: 500px;
+}
+
+.account-summary-top .image-holder {
+    display: flex;
+    justify-content: center;
+}
+.account-summary-top .image-holder img {
+    width: 60px;
+}
+
+.account-summary-bottom {
+    margin: 20px;
+}
+
+.account-summary-bottom a {
+    color: #000000;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 6px 20px;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.253);
+}
+
+.dashboard-deposit-button a {
+    background: rgb(228, 0, 15);
+    background: linear-gradient(21deg, rgba(228, 0, 15, 1) 0%, rgba(250, 65, 77, 1) 35%, rgba(117, 0, 8, 1) 100%);
+    color: white;
+}
+
+.user-details {
+    margin: 20px auto;
+    background-color: #343a40;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.detail-cell {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.detail-cell img {
+    width: 75px;
+}
+
+.user-info {
+    margin: 10px;
+}
+
+.user-detail-label {
+    color: #007bff;
+}
+
+.user-detail-value {
+    font-weight: bold;
+}
+
+.main-footer {
+    z-index: 1000;
+}
+
+.footer-rights {
+    z-index: 100000000000000000000 !important;
+}
+
+.plan-box {
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.616);
+    border-radius: 3px;
+    text-align: center;
+    background-color: #fff;
+    /* padding-bottom: 20px; */
+    color: #ff4141 !important;
+}
+
+.plan-box a {
+    cursor: pointer;
+}
+
+.plan-box img {
+    width: 100%;
+    border-radius: 3px;
+    /* margin-bottom: 20px; */
+}
+
+
+/* .plan-box-1 {
+    background-color: #F4EDEA;
+}
+
+.plan-box-2 {
+    background-color: #DEE6F0;
+}
+
+.plan-box-3 {
+    background-color: #CFD3DC;
+} */
+
+.plan-box span {
+    /* color: #ffffff; */
+    /* font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 50px;
+    width: 100%; */
+    /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.473); */
+}
+
+.row-deposit {
+    color: #000000 !important;
+    margin: 50px auto;
+    padding: 20px 10px;
+    border-radius: 3px;
+    /* border: 1px solid #00000061; */
+    box-shadow: 2px 2px 5px #00000061;
+    background-color: #FFFFFF;
+    background-image: url("../img/bg/layered-waves-haikei.svg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* 
+.submit-deposit {
+    color: white;
+}
+
+.submit-deposit:hover {
+    background-color: #569ef0 !important;
+    color: white !important;
+    box-shadow: 0 0 5px #40c9ff;
+}
+
+.submit-deposit:focus {
+    background-color: #235691 !important;
+    color: white !important;
+} */
+
+.chosen-plan {
+    font-family: 'bebas_neue';
+    font-weight: bolder;
+    font-size: 2.2vw;
+    /* color: var(--spar-green); */
+    color: black;
+}
+
+.chosen-plan-amount {
+    font-family: 'bebas_neue';
+    color: #ffbc00;
+    font-size: 4vw;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.deposit-details .card{
+    border-radius: 1px !important;
+
+}
+
+.receipt-header {
+    margin: 20px;
+}
+
+.receipt-header img {
+    background-color: white;
+    border: 5px solid #0a2c74;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+}
+
+.line-separator {
+    height: 2px;
+    width: 100%;
+    background: #000;
+}
+
+.receipt-body {
+    /* margin: auto; */
+    color: rgb(236, 236, 236);
+}
+
+.table-receipt-row {
+    padding: 10px 0px;
+    border-bottom: 1px dashed black;
+}
+
+.table-receipt-data {
+    font-weight: bolder;
+}
+
+.receipt-selected-plan {
+    color: #e4000f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.alert-receipt{
+    background: goldenrod !important;
+    border-radius: 20px 20px 0px 20px !important;
+}
+
+.deposit_note_row{
+    overflow-wrap: anywhere;
+    overflow: scroll;
+}
+
+.deposit-amount {
+    font-family: 'bebas_neue';
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.deposit_address {
+    color: #000000;
+    font-family: "Consolas" !important;
+    word-wrap: normal;
+}
+
+.usdt-warning {
+    color: #FE9452;
+}
+
+.payment-email {
+    font-family: monospace;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.deposit_detail_confirm {}
+
+.card_withdrawal label {
+    color: rgb(0, 0, 0) !important;
+}
+
+.withdraw-content {
+    min-width: 300px;
+    margin: auto;
+}
+
+.withdraw-error {
+    color: white;
+}
+
+.withdraw_button {
+    background-color: #4284CE !important;
+    color: rgb(0, 0, 0);
+}
+
+.withdraw-success {
+    color: #00000098;
+}
+
+.card_ref_active {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ref-card-header {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.totals-row {
+    text-align: center;
+}
+
+.totals-row .total-title {
+    font-weight: bold;
+}
+
+.totals-row .total-value {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.row_transfer_form .card {
+    padding: 20px;
+}
+
+.content-area {
+    /* margin: auto; */
+    background-color: rgba(255, 255, 255, 0.658);
+    padding: 30px 10px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background-size: auto;
+}
+
+.adv-withdrawal-button {
+    width: 100px;
+    background-color: #235691;
+    color: #fff;
+}
+
+.adv-withdrawal-button:hover {
+    background-color: #094283 !important;
+    color: #fff;
+}
+
+.adv-withdrawal-button:focus {
+    background-color: #548dce !important;
+    color: #fff;
+}
+
+.main-navbar>a.hamburger-menu>.fa-bars:before {
+    content: url("https://img.icons8.com/wired/20/e4000f/menu.png");
+    font-size: 10px;
+    position: relative;
+    top: 12px;
+    color: #e4000f;
+}
+
+.hamburger-menu::after {
+    content: "Menu";
+    color: #e4000f;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 9px;
+}
+
+.img-box {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
+    border: 2px solid #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.market-plan-img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.row-accounts .section-title::before{
+    background-color: var(--spar-red) !important;
+    width: 15px;
+}
+
+.row-accounts .card label {
+    color: rgb(0, 0, 0) !important;
+}
+
+.acc_settings_submit {
+    background-color: #0a2c74 !important;
+    color: white;
+}
+
+.acc_settings_submit:hover {
+    background-color: #032f8f !important;
+}
+
+.acc_settings_submit:focus {
+    background-color: #011c57 !important;
+}
+
+.video-ad-modal {
+    background-color: #242424 !important;
+}
+
+.video-ad-modal>button {
+    position: fixed;
+    right: 10px;
+    color: rgb(0, 0, 0) !important;
+}
+
+.video-ad-modal>button>span {
+    color: white !important;
+}
+
+.franchise-card{
+    font-size: medium !important;
+}
+
+.franchise-card .card-header span {
+    color: var(--spar-red) !important;
+}

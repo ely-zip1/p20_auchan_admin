@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="480pt"
+   viewBox="0 -56 480 480"
+   width="480pt"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="total-withdrawn.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.8125"
+     inkscape:cx="319.38462"
+     inkscape:cy="320.61538"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <linearGradient
+     id="a"
+     gradientUnits="userSpaceOnUse"
+     x1="40.688"
+     x2="448"
+     y1="388"
+     y2="-19.312">
+    <stop
+       offset="0"
+       stop-color="#41dfd0"
+       id="stop2"
+       style="stop-color:#4304fa;stop-opacity:1" />
+    <stop
+       offset="1"
+       stop-color="#ee83ef"
+       id="stop4"
+       style="stop-color:#c63c96;stop-opacity:1" />
+  </linearGradient>
+  <path
+     d="m16 270.527344v89.472656c0 4.417969 3.582031 8 8 8h448c4.417969 0 8-3.582031 8-8v-344c0-4.417969-3.582031-8-8-8h-92.6875l-5.65625-5.65625c-.679688-.671875-1.476562-1.210938-2.351562-1.601562-.242188-.101563-.472657-.167969-.71875-.253907-.683594-.234375-1.394532-.375-2.113282-.4179685-.160156.0195313-.304687-.0703125-.472656-.0703125h-344c-13.253906 0-24 10.746094-24 24v224c.0429688 10.132812 6.445312 19.148438 16 22.527344zm448 81.472656h-432v-16h432zm0-32h-432v-16h432zm0-32h-432v-16h432zm0-264v68.6875l-16-16v-28.6875c0-4.417969-3.582031-8-8-8h-28.6875l-16-16zm-32 32v4.6875l-4.6875-4.6875zm-56-16v-12.6875l76.6875 76.6875h-76.6875zm-8 80h64v64.664062c-20.128906 3.441407-35.894531 19.207032-39.335938 39.335938h-305.328124c-3.441407-20.128906-19.207032-35.894531-39.335938-39.335938v-97.328124c20.128906-3.441407 35.894531-19.207032 39.335938-39.335938h272.664062v64c0 4.417969 3.582031 8 8 8zm-352-96c0-4.417969 3.582031-8 8-8h336v16h-280c-4.417969 0-8 3.582031-8 8 0 17.671875-14.328125 32-32 32-4.417969 0-8 3.582031-8 8v112c0 4.417969 3.582031 8 8 8 17.671875 0 32 14.328125 32 32 0 4.417969 3.582031 8 8 8h320c4.417969 0 8-3.582031 8-8 0-17.671875 14.328125-32 32-32 4.417969 0 8-3.582031 8-8v-72h16v136h-440c-4.417969 0-8-3.582031-8-8zm224 40c-39.765625 0-72 32.234375-72 72s32.234375 72 72 72 72-32.234375 72-72c-.046875-39.746094-32.253906-71.953125-72-72zm0 128c-30.929688 0-56-25.070312-56-56s25.070312-56 56-56 56 25.070312 56 56c-.035156 30.914062-25.085938 55.964844-56 56zm-120-64h16v16h-16zm224 0h16v16h-16zm0 0"
+     fill="url(#a)"
+     id="path7" />
+</svg>

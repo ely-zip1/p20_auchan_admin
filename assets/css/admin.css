@@ -1,0 +1,16 @@
+.navbar-bg {
+    background-color: #ff373700 !important;
+    background: url("../img/bg/layered-peaks-haikei.svg");
+    /* background-size: 100% auto; */
+    background-repeat: repeat-y;
+}
+
+.nav-link-user {
+    color: #0D65AF !important;
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+.section_header_admin {
+    color: white;
+}
