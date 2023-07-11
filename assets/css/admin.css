@@ -1,7 +1,5 @@
 .navbar-bg {
-    background-color: #ff373700 !important;
-    background: url("../img/bg/layered-peaks-haikei.svg");
-    /* background-size: 100% auto; */
+    background-color: red !important;
     background-repeat: repeat-y;
 }
 

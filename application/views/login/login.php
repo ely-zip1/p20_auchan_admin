@@ -20,13 +20,10 @@ $this->load->view('login/login-header');
                             <div class="col-12 text-center">
                                 <div class="login-brand">
                                     <div class="logo-container">
-                                        <a href="<?= base_url(); ?>">
-                                            <div class="brand-logo"></div>
-                                        </a>
                                     </div>
                                     <br>
                                     <br>
-                                    <span class="brand-group">MEMBER LOGIN</span>
+                                    <span class="brand-group">ADMIN LOGIN</span>
                                 </div>
                             </div>
                         </div>
@@ -94,23 +91,11 @@ $this->load->view('login/login-header');
                         </div>
 
                         <div class="form-group text-right">
-                            <button type="submit" class="btn btn-lg btn-block spar-red-btn" tabindex="4">
+                            <button type="submit" class="btn btn-lg btn-block" tabindex="4">
                                 Login
                             </button>
                         </div>
                         </form>
-                        <div class="mb-3 text-center">
-                            <!-- <span class="create_account">Create an account. </span> -->
-                            <!-- Don't have an account? -->
-                            <a class="sign_up" href="<?php echo base_url(); ?>registration">
-                                Sign up
-                            </a>
-                        </div>
-                        <div class="mb-3 text-center">
-                            <a href="<?php echo base_url(); ?>forgot_password" class="forgot_password">
-                                Forgot Password
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

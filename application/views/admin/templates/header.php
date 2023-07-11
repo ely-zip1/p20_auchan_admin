@@ -11,7 +11,7 @@ if (!isset($this->session->email)) {
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title><?php echo $title; ?> &mdash; SPAR International Admin</title>
+    <title><?php echo $title; ?> &mdash; AR Admin</title>
 
 
     <!-- favicon -->

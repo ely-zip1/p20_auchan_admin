@@ -64,4 +64,4 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 </head>
 
-<body class="body-login" id="page">
+<body class="" id="page">

@@ -246,8 +246,3 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </head>
 
 <body class="body-login" id="page">
-    <video autoplay muted loop class="homeVideoBackground">
-        <source src="<?= base_url('assets/img/bg/corporate_profile.mp4') ?>" type="video/mp4">
-    </video>
-
-    <div class="login-reg-bg"></div>

@@ -15,7 +15,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="mr-auto"></div>
             <ul class="navbar-nav navbar-right">
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg nav-link-user">
-                        <!-- <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-1.png" class="rounded-circle mr-1 "> -->
                         <h3 class="fas fa-user"></h3>
                         <div class="d-sm-none d-lg-inline-block">
                             <?php echo ucfirst($this->session->first_name) . ' ' . ucfirst($this->session->last_name) ; ?>

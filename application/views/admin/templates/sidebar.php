@@ -5,10 +5,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <aside id="sidebar-wrapper">
 
         <div class="sidebar-brand">
-            <a href="<?= base_url('deposits_admin'); ?>">SPAR International</a>
+            <a href="<?= base_url('deposits_admin'); ?>">Auchan Retail</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="<?= base_url('deposits_admin'); ?>">SPAR</a>
+            <a href="<?= base_url('deposits_admin'); ?>">AR</a>
         </div>
 
         <ul class="sidebar-menu">
