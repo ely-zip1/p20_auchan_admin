@@ -33,7 +33,7 @@
                                     <tr>
                                         <td><?php echo $item['client_name']; ?></td>
                                         <td><?php echo $item['email']; ?></td>
-                                        <td>$ <?php echo $item['amount']; ?></td>
+                                        <td>€ <?php echo $item['amount']; ?></td>
                                         <td><?php echo $item['mode']; ?></td>
                                         <td><?php echo $item['plan']; ?></td>
                                         <td><?php

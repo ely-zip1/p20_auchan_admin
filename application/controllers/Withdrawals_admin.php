@@ -138,7 +138,7 @@ class Withdrawals_admin extends CI_Controller
                                         <label>" . $payment_mode->trx . "</label>
                                       </div>
                                   ";
-      }else if($pending->payment_method == 'USDT'){
+      }else if($pending->payment_method == 'Tether (USDT)'){
         $payment_mode = $this->Withdrawal_Mode_model->get_per_member($member_data->id);
 
         $temp['mode'] = $pending->payment_method;
