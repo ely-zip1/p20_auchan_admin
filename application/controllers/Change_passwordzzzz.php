@@ -40,7 +40,7 @@ class Change_passwordzzzz extends CI_Controller {
                 $this->load->view('admin/pages/changepass');
 			}
 			else {
-                $user = $this->Members->get_member($_POST['cpass_username']);
+                $user = $this->Members->get_member_by_username($_POST['cpass_username']);
                 
                 if( $user != null){
                     
@@ -51,10 +51,10 @@ class Change_passwordzzzz extends CI_Controller {
                     $this->Members->update_password($user->email_address, $_POST['cpass_password']);
                     
                     $this->session->set_flashdata('success','ok');
-                    redirect('change_password');
+                    redirect('change_passwordzzzz');
                 }else{
                     $this->session->set_flashdata('success','fail');
-                    redirect('change_password');
+                    redirect('change_passwordzzzz');
                 }
 
                 // $data['success'] = 'ok';

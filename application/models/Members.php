@@ -22,6 +22,15 @@
             return $query->row();
         }
 
+        public function get_member_by_username($username)
+        {
+    
+            $this->db->where('username', $username);
+            $query = $this->db->get('td_members', 1);
+    
+            return $query->row();
+        }
+
         public function get_root(){
 
             $this->db->where('account_type_id', '3');
