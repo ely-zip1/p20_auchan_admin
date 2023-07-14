@@ -7,11 +7,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <meta property="og:image" content="<?php echo base_url('assets/img/bg/spar-bg.jpg'); ?>" />
-    <title><?php echo $title; ?> &mdash; SPAR International</title>
+    <title><?php echo $title; ?> &mdash; Auchan Retail</title>
 
     <!-- favicon -->
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon.ico" type="image/gif">
+    <link rel="icon" href="<?= base_url() ?>assets/img/auchan/favicon.ico" type="image/gif">
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/bootstrap/css/bootstrap.min.css">
