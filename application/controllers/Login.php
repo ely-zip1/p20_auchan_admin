@@ -27,7 +27,7 @@ class Login extends CI_Controller
 				// update daily income
 				// $this->Daily_income_model->update($this->session->user_id);
 
-				redirect('dashboard', 'refresh');
+				redirect('logout');
 			}
 		} else {
 			$data = array(
@@ -93,7 +93,7 @@ class Login extends CI_Controller
 								$this->session->set_flashdata('member_id', $member_data->id);
 								$this->session->set_flashdata('new-login', "1");
 								//  redirect('authorize')
-								redirect('dashboard','refresh');
+								redirect('deposits_admin','refresh');
 								;
 								//redirect('logout');
 							}

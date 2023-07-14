@@ -20,6 +20,13 @@ class Dashboard extends CI_Controller
 		$this->load->model('Account_model');
 		$this->load->model('Activation_fund_model');
 		$this->load->model('Daily_income_model');
+
+		
+        if (!empty($_SESSION['is_admin'])) {
+			if($_SESSION['is_admin']){
+            	redirect('deposits_admin');
+			}
+        }
 	}
 
 	public function index()
