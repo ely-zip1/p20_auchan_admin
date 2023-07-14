@@ -15,7 +15,9 @@ if (!isset($this->session->email)) {
 
 
     <!-- favicon -->
-    <link rel="icon" href="<?= base_url() ?>assets/img/favicon2.ico" type="image/gif">
+    <link rel="icon" href="<?= base_url() ?>assets/img/auchan/favicon.ico" type="image/gif">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/bootstrap/css/bootstrap.min.css">

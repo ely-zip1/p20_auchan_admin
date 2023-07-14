@@ -24,6 +24,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <script src="<?php echo base_url(); ?>assets/js/backgroundTransition.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/particleBackground.js"></script>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
 
     <!-- CSS Libraries -->

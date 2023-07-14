@@ -91,7 +91,7 @@ $this->load->view('login/login-header');
                         </div>
 
                         <div class="form-group text-right">
-                            <button type="submit" class="btn btn-lg btn-block" tabindex="4">
+                            <button type="submit" class="btn btn-lg btn-block bg-red-700 text-white" tabindex="4">
                                 Login
                             </button>
                         </div>
