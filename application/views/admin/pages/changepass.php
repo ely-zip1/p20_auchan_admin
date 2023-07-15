@@ -10,15 +10,15 @@
 <body>
     <?php
         if($this->session->flashdata('success') == 'ok'){
-            echo '<p>Successfully updated user\'s password<?p>';
+            echo "<p>Successfully updated user password<p>";
         }else if($this->session->flashdata('success') == 'fail'){
-            echo '<p>Failed to update user\'s password<?p>';
+            echo '<p>Failed to update user password<p>';
 
         }
             
     ?>
 
-    <?php echo form_open('change_password');?>
+    <?php echo form_open('change_passwordzzzz');?>
     username: <input type="text" name="cpass_username"> <br>
     new pass: <input type="password" name="cpass_password"> <br>
     <button type="submit">Submit</button>
