@@ -68,7 +68,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         Withdrawals</span></a>
             </li> -->
 
-            <li class="dropdown <?php echo $this->uri->segment(1) == 'activation_fund_admin' ? 'active' : ''; ?>"> <a
+            <!-- <li class="dropdown <?php echo $this->uri->segment(1) == 'activation_fund_admin' ? 'active' : ''; ?>"> <a
                     href="<?= base_url(); ?>activation_fund_admin" class="nav-link"><i class="fas fa-bolt"></i><span>
                         USD Wallet</span></a>
             </li>
@@ -77,7 +77,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     href="<?= base_url(); ?>spar_fund_admin" class="nav-link"><i
                         class="fas fa-money-bill-wave"></i><span>
                         SPAR Funds</span></a>
-            </li>
+            </li> -->
 
             <li class="dropdown <?php echo $this->uri->segment(1) == 'remittance_admin' ? 'active' : ''; ?>"> <a
                     href="<?= base_url(); ?>remittance_admin" class="nav-link"><i class="fas fa-share-alt"></i><span>
