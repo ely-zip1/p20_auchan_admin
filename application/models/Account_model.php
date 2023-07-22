@@ -27,7 +27,8 @@ class Account_model extends CI_Model
     $pending_withdrawal = $this->WithdrawalModel->get_pending_withdrawal($member_data->id);
     $total_withdrawal = $this->WithdrawalModel->get_total_withdrawal_per_member($member_data->id);
     $last_withdrawal = $this->WithdrawalModel->get_latest_withdrawal_amount($member_data->id);
-    $total_growth = $this->DepositModel->get_total_growth($member_data->id);
+    // $total_growth = $this->DepositModel->get_total_growth($member_data->id);
+    $total_growth = $this->Daily_income_model->total_growth($member_data->id);
     $last_deposit = $this->DepositModel->get_latest_deposit_amount($member_data->id);
     $total_deposit = $this->DepositModel->get_total_deposit($member_data->id);
     $total_bonus = $this->Referral_bonus_model->get_total_bonus($member_data->id);

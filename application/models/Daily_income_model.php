@@ -73,6 +73,16 @@ class Daily_income_model extends CI_Model
     // }
   }
 
+  public function total_growth($member_id)
+  {
+    $this->db->select_sum('amount');
+    $this->db->where('member_id', $member_id);
+    $this->db->where('date_added <=', date('Y-m-d H:i:s'));
+    $query = $this->db->get('td_daily_income');
+
+    return $query->row()->amount;
+  }
+
   public function fix_error()
   {
     // $data = array(

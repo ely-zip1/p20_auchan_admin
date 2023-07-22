@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -60,3 +60,4 @@ $route['manage_users/(:any)'] = 'manage_users/$1';
 $route['member_outlet/(:any)'] = 'member_outlet/index/$1';
 $route['franchise-application-2'] = 'franchise_application/show_step_2';
 $route['remittance/remittance_request'] = 'remittance/remittance_request';
+$route['send_package/(:any)'] = 'send_package/index/$1';

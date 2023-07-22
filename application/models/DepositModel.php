@@ -101,31 +101,31 @@ class DepositModel extends CI_Model
     foreach ($deposit_query->result() as $deposit) {
       if ($deposit->is_expired || $deposit->deposit_options_id != 11 || $deposit->is_pending == 1) {
         continue;
-      }else{
+      } else {
         $start_date = new DateTime($deposit->date_approved);
         $end_date = DateTime::createFromFormat('Y-m-d H:i:s', date('Y-m-d H:i:s'));
-  
+
         $difference = $start_date->diff($end_date);
         // print_r($difference);
         $number_of_days = $difference->days;
-  
+
         $this->db->where('id', $deposit->package_id);
         $package_query = $this->db->get('td_packages', 1);
         $package = $package_query->row();
-  
+
         $package_growth = ($deposit->amount * ($package->daily_rate / 100)) * $number_of_days;
-  
+
         $total_growth += $package_growth;
       }
-  
-      if($member_id == '180'){
+
+      if ($member_id == '180') {
         return $total_growth + 261;
       }
-      
+
     }
 
     return $total_growth;
-  } 
+  }
 
   public function Approve_pending($deposit_id)
   {
@@ -234,7 +234,7 @@ class DepositModel extends CI_Model
     $this->db->select_sum('amount');
     $this->db->where('member_id', $member_id);
     // $this->db->where('is_pending', 0);
-    $this->db->where('deposit_options_id', 11);
+    $this->db->where('deposit_options_id', 1);
     $query = $this->db->get('td_deposits');
 
     return $query->row();
@@ -243,12 +243,12 @@ class DepositModel extends CI_Model
   public function get_total_approved_deposit_per_member($member_id)
   {
     $total = 0;
-    
+
     $this->db->select_sum('amount');
     $this->db->where('member_id', $member_id);
     $this->db->where('is_pending', 0);
     $query = $this->db->get('td_deposits');
-    
+
     $total += $query->row()->amount;
 
     return $total;

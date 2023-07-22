@@ -89,6 +89,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         class="fas fa-hand-holding-usd"></i><span>
                         Member Balance</span></a>
             </li>
+            <!-- <li class="dropdown <?php echo $this->uri->segment(1) == 'send_package' ? 'active' : ''; ?>"> <a
+                    href="<?= base_url(); ?>send_package" class="nav-link"><i class="fas fa-share"></i><span>
+                        Send Package</span></a>
+            </li> -->
             <br>
             <br>
             <br>

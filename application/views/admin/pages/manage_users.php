@@ -1,8 +1,8 @@
 <div class="main-content">
     <section class="section">
         <!-- <div class="section-header">
-			<h1>Update Account</h1>
-		</div> -->
+            <h1>Update Account</h1>
+        </div> -->
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 col-sm-12">
@@ -17,15 +17,15 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <!-- <select class="custom-select" id="inputGroupSelect05" name="filter">
-	                    <option selected value="name">Name</option>
-	                    <option value="username">Username</option>
-	                  </select> -->
+                        <option selected value="name">Name</option>
+                        <option value="username">Username</option>
+                      </select> -->
                                     <input type="text" name="search-term" class="form-control">
                                     <div class="input-group-append">
-                                        <button class="btn btn-primary" type="submit">Search</button>
+                                        <button class="btn text-dark" type="submit">Search</button>
                                     </div>
                                     <div class="input-group-append">
-                                        <button class="btn btn-primary" value="cancel" name="cancel"
+                                        <button class="btn text-dark" value="cancel" name="cancel"
                                             type="submit">Reset</button>
                                     </div>
                                 </div>
@@ -38,12 +38,12 @@
                         <ul class="pagination">
                             <?php
 
-								// print_r($total_pages);
-
-							for ($i=1; $i <= $total_pages; $i++) {
-								echo '<li class="page-item">
-								<a class="page-link" href="'.base_url('manage_users/'.$i*10).'">'.$i.'</a></li>';
-							} ?>
+                            // print_r($total_pages);
+                            
+                            for ($i = 1; $i <= $total_pages; $i++) {
+                                echo '<li class="page-item">
+								<a class="page-link" href="' . base_url('manage_users/' . $i * 10) . '">' . $i . '</a></li>';
+                            } ?>
 
                         </ul>
                     </div>
@@ -73,20 +73,21 @@
 
                                 <tbody>
                                     <?php foreach ($users as $user) { ?>
-                                    <tr>
-                                        <td><?php echo $user['full_name']; ?></td>
-                                        <td><?php echo $user['email']; ?></td>
-                                        <td>$ <?php echo number_format($user['total_deposit'],2); ?></td>
-                                        <td><?php echo $user['date_joined']; ?></td>
-                                        <td><?php echo $user['referred_by']; ?></td>
-                                        <td><?php echo base_url().'my/ref/'.$user['referral_code']; ?>
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-success btn-sm"
-                                                href="<?php echo base_url('user_details/show/'.$user['id']) ?>"> Details
-                                            </a>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td><?php echo $user['full_name']; ?></td>
+                                            <td><?php echo $user['email']; ?></td>
+                                            <td>$ <?php echo number_format($user['total_deposit'], 2); ?></td>
+                                            <td><?php echo $user['date_joined']; ?></td>
+                                            <td><?php echo $user['referred_by']; ?></td>
+                                            <td><?php echo base_url() . 'my/ref/' . $user['referral_code']; ?>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-success btn-sm"
+                                                    href="<?php echo base_url('user_details/show/' . $user['id']) ?>">
+                                                    Details
+                                                </a>
+                                            </td>
+                                        </tr>
                                     <?php } ?>
                                 </tbody>
 
