@@ -15,6 +15,7 @@ class Account_model extends CI_Model
     $this->load->model('ReferralModel');
     $this->load->model('GroupSalesModel');
     $this->load->model('Advanced_withdrawals_model');
+    $this->load->model('Daily_income_model');
 
     date_default_timezone_set('Asia/Manila');
   }
